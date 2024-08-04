@@ -1,3 +1,7 @@
 .heading {
     text-align: center;
   }
+  .tasks-container {
+    height: 500px;
+    overflow-y: scroll;
+  }
