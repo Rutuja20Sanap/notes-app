@@ -6,4 +6,5 @@ function loadFromLocalStorage() {
   if (allTasks) {
     tasks.push(...allTasks);
   }
+  loadTasks();
 }
