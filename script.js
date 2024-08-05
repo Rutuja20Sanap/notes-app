@@ -29,3 +29,19 @@ function loadTasks() {
 
     loadTasks();
   }
+  function addTask() {
+    const taskInputElement = document.getElementById("task-input");
+    const task = taskInputElement.value;
+
+    if (!task) {
+      alert("Please enter a task");
+      return;
+    }
+
+    tasks.unshift(task);
+    loadTasks();
+
+    taskInputElement.value = "";
+  }
+
+  loadFromLocalStorage();
