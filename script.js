@@ -23,3 +23,9 @@ function loadTasks() {
       `;
     }
   }
+  function deleteTask(task) {
+    const taskIndex = tasks.indexOf(task);
+    tasks.splice(taskIndex, 1);
+
+    loadTasks();
+  }
